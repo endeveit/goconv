@@ -2,7 +2,7 @@ package goconv
 
 /*
 #cgo CFLAGS: -I/usr/include
-#cgo LDFLAGS: -liconv -L/usr/local
+#cgo darwin LDFLAGS: -liconv -L/usr/local
 #include <iconv.h>
 #include <errno.h>
 #include <stdlib.h>
