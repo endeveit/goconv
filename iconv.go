@@ -1,12 +1,12 @@
 package goconv
 
-/*
-#cgo CFLAGS: -I/usr/include
-#cgo darwin LDFLAGS: -liconv -L/usr/local
-#include <iconv.h>
-#include <errno.h>
-#include <stdlib.h>
-*/
+// #cgo CFLAGS: -I${SRCDIR}/../../../../../clibs/include
+// #cgo LDFLAGS: -L${SRCDIR}/../../../../../clibs/lib -liconv
+// #cgo darwin CFLAGS: -I/usr/include
+// #cgo darwin LDFLAGS: -liconv -L/usr/local
+// #include <iconv.h>
+// #include <errno.h>
+// #include <stdlib.h>
 import "C"
 import (
 	"bytes"
